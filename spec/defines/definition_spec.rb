@@ -39,7 +39,7 @@ describe 'android::definition' do
     end
     context "default params" do
       it do
-        should include_class('android::sdk')
+        should contain_class('android::sdk')
 
         should contain_exec('android-update-android-17').with({
           :command  => "(while [ 1 ]; do sleep 1; echo y; done)|/opt/boxen/homebrew/opt/android-sdk/bin/android update sdk --all --no-ui --filter android-17",

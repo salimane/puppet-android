@@ -8,7 +8,7 @@ describe 'android::ndk' do
   end
 
   it do
-    should include_class('android::sdk')
+    should contain_class('android::sdk')
 
     should contain_homebrew__formula('android-ndk')
 

@@ -8,8 +8,8 @@ describe 'android::sdk' do
   end
 
   it do
-    should include_class('android')
-    should include_class('java')
+    should contain_class('android')
+    should contain_class('java')
 
     should contain_homebrew__formula('android-sdk')
 
