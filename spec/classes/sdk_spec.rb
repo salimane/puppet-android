@@ -13,6 +13,6 @@ describe 'android::sdk' do
 
     should contain_homebrew__formula('android-sdk')
 
-    should contain_package('boxen/brews/android-sdk').with_ensure('23-boxen1')
+    should contain_package('boxen/brews/android-sdk').with_ensure('24-boxen1')
   end
 end
