@@ -2,13 +2,13 @@ require 'formula'
 
 class AndroidSdk < Formula
   homepage 'http://developer.android.com/index.html'
-  url 'http://dl.google.com/android/android-sdk_r24.0.2-macosx.zip'
-  version '24-boxen1'
-  sha1 '3ab5e0ab0db5e7c45de9da7ff525dee6cfa97455'
+  url 'https://dl.google.com/android/android-sdk_r24.2-macosx.zip'
+  version '24.2-boxen1'
+  sha256 '9e0cd4844a696c555563a2daad5ff6731a4175b7a56f00c8f8dd831dbca9511b'
 
   resource 'completion' do
     url 'https://raw.githubusercontent.com/CyanogenMod/android_sdk/938c8d70af7d77dfcd1defe415c1e0deaa7d301b/bash_completion/adb.bash'
-    sha1 '6dfead9b1350dbe1c16a1c80ed70beedebfa39eb'
+    sha256 "6ae8fae2a07c7a286d440d5f5bdafdd0c208284d7c8be21a0f59d96bb7426091"
   end
 
   # TODO docs and platform-tools
@@ -23,7 +23,7 @@ class AndroidSdk < Formula
     :because => "the Platform-tools are be installed as part of the SDK."
 
   def build_tools_version
-    "21.1.2"
+    "22.0.1"
   end
 
   def install
